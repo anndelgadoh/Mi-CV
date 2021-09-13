@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #dad9d6;
+    font-family: 'Lato', sans-serif;
+    padding: 0 1.5em ;
+}
+/*Contenedor principal*/
+.conteiner{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    box-shadow: 0 0 20px 0 rgb(0, 0, 0);
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100px;
+    margin: 50px;
+}
+/*Texto y imagen*/
+.name{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+}
+.name .image-profile{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 15px;
+    align-items: center;
+}
+.name .image-profile img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.name h2{
+    color: black;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase ;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.contactInfo{
+    padding-top: 15px;
+}
+.title{
+    color:black;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo > ul{
+    position: relative;
+}
+.contactInfo > ul > li{
+    position: relative;
+    list-style: none;
+    margin: 10px o;
+    cursor: pointer;
+}
+.contactInfo > .skills > li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: black;
+}
+.contactInfo > .skills > li > span{
+    color:black;
+    font-weight: 300;
+}
+.text{
+    text-decoration: none;
+}
+.educacion{
+    margin-bottom: 15px;
+}
+.title1{
+    color:black;
+    font-weight: 300;
+}
+.conteiner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.about{
+    color:black;
+    font-weight: 300;
+    text-align: justify;
+}
+/*Lado izquiero*/
+.left-side{
+    background:#a49099;    ;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+    font-size: 14px;
+}
+/*Lado Derecho*/
+.right-side{
+    background: #dad9d6;    ;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: justify;
+    font-size: 12px;
+}
+.espacio{
+    padding-top: 2px;
+}
+.hobbies{
+    font-size: 13px;
+}
+/*Diseño de Media*/
+@media (max-width: 1000px){
+    .conteiner{
+        margin: 20px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
